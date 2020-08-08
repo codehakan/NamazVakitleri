@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#803065AC</color> bu normal rengin saydamlaştırılmış hali -->
+    <color name="colorPrimary">#385376</color> <!-- bu ise saydamlaştırılmış rengin direkt renk kodu -->
+    <color name="colorPrimaryDark">#003700B3</color>
+    <color name="colorAccent">#3303DAC5</color>
+    <color name="colorWhite">#3303DAC5</color>
+    <color name="selected">#a8cf45</color>
+    <color name="unselected">#ff8cae3b</color>
+
+
+
+    <!--
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color> -->
+</resources>

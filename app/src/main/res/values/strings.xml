@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Namaz Vakitleri</string>
+    <string name="title_activity_homepage">Ana Sayfa</string>
+    <string name="title_home">Ana Sayfa</string>
+    <string name="title_dashboard">Menüler</string>
+    <string name="title_notifications">Bildirimler</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Merhaba, ben Namazcı!</string>
+</resources>

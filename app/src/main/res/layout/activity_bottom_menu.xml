@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/arkaplan_bildirim"
+    android:paddingTop="?actionBarSize"
+    tools:context=".bottomnavi.bottom_menu">
+
+
+    <LinearLayout
+        android:id="@+id/linear_birinci_satir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_dini_gunler_ve_geceler"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/dini_gunler_ve_geceler_min"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_menuler" />
+
+        <ImageButton
+            android:id="@+id/btn_ezan_ve_dua_dinle_min"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/ezan_ve_dua_dinle_min"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_menuler" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_ikinci_satir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_birinci_satir"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_cuma_mesajlari"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/cuma_mesajlari"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_menuler" />
+
+        <ImageButton
+            android:id="@+id/btn_kible_pusulasi_min"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/kible_pusulasi_min"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_menuler" />
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/navgation_menu" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@mipmap/background_min"
+    tools:context=".install.activity_settings_country">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_background"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/settings_ulke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/shape_background"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <Button
+            android:id="@+id/settings_ulke_button"
+            android:layout_below="@+id/settings_ulke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textColor="#fff"
+            android:enabled="false"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_selector"
+            android:layout_marginRight="25dp"
+            android:text="...Bekleyiniz..."
+            android:textSize="19dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

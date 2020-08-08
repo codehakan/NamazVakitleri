@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_vakit_imsak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:text="İmsak"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_vakit_imsak"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="dakika önce vakti hatırlat."
+                android:textColor="#FFFFFF"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/txt_vakit_imsak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_toStartOf="@+id/switch_imsak"
+                android:layout_toLeftOf="@+id/switch_imsak"
+                android:layout_toEndOf="@+id/lbl_vakit_imsak"
+                android:layout_toRightOf="@+id/lbl_vakit_imsak"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="15"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#4DFFFFFF"
+                android:textColorLink="#fff" />
+
+            <Switch
+                android:id="@+id/switch_imsak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:theme="@style/SCBSwitch" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_vakit_gunes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:text="Güneş"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_vakit_gunes"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="dakika önce vakti hatırlat."
+                android:textColor="#FFFFFF"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/txt_vakit_gunes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_toStartOf="@+id/switch_gunes"
+                android:layout_toLeftOf="@+id/switch_gunes"
+                android:layout_toEndOf="@+id/lbl_vakit_gunes"
+                android:layout_toRightOf="@+id/lbl_vakit_gunes"
+                android:gravity="center"
+                android:hint="15"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#4DFFFFFF"
+                android:textColorLink="#fff" />
+
+            <Switch
+                android:id="@+id/switch_gunes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:theme="@style/SCBSwitch" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_vakit_ogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:text="Öğle"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_vakit_ogle"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="dakika önce vakti hatırlat."
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/txt_vakit_ogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_toStartOf="@+id/switch_ogle"
+                android:layout_toLeftOf="@+id/switch_ogle"
+                android:layout_toEndOf="@+id/lbl_vakit_ogle"
+                android:layout_toRightOf="@+id/lbl_vakit_ogle"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="15"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#4DFFFFFF"
+                android:textColorLink="#fff" />
+
+            <Switch
+                android:id="@+id/switch_ogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:theme="@style/SCBSwitch" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_vakit_ikindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:text="İkindi"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_vakit_ikindi"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="dakika önce vakti hatırlat."
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/txt_vakit_ikindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_toStartOf="@+id/switch_ikindi"
+                android:layout_toLeftOf="@+id/switch_ikindi"
+                android:layout_toEndOf="@+id/lbl_vakit_ikindi"
+                android:layout_toRightOf="@+id/lbl_vakit_ikindi"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="15"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#4DFFFFFF"
+                android:textColorLink="#fff" />
+
+            <Switch
+                android:id="@+id/switch_ikindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:theme="@style/SCBSwitch" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_vakit_aksam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:text="Akşam"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_vakit_aksam"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="dakika önce vakti hatırlat."
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/txt_vakit_aksam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_toStartOf="@+id/switch_aksam"
+                android:layout_toLeftOf="@+id/switch_aksam"
+                android:layout_toEndOf="@+id/lbl_vakit_aksam"
+                android:layout_toRightOf="@+id/lbl_vakit_aksam"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="15"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#4DFFFFFF"
+                android:textColorLink="#fff" />
+
+            <Switch
+                android:id="@+id/switch_aksam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:theme="@style/SCBSwitch" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_vakit_yatsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:text="Yatsı"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_vakit_yatsi"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="dakika önce vakti hatırlat."
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/txt_vakit_yatsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_toStartOf="@+id/switch_yatsi"
+                android:layout_toLeftOf="@+id/switch_yatsi"
+                android:layout_toEndOf="@+id/lbl_vakit_yatsi"
+                android:layout_toRightOf="@+id/lbl_vakit_yatsi"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="15"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="#4DFFFFFF"
+                android:textColorLink="#fff" />
+
+            <Switch
+                android:id="@+id/switch_yatsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:theme="@style/SCBSwitch" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
